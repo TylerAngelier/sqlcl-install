@@ -1,21 +1,21 @@
 # sqlCL Setup
 
-This script will grab the latest version of [Oracle's sqlCL](https://www.oracle.com/database/technologies/appdev/sqlcl.html) and install it to a path that you specify.
+This script will grab the latest version of [Oracle's SQLcl](https://www.oracle.com/database/technologies/appdev/sqlcl.html) and install it to a path that you specify.
 
 # How to use
 
-Running this script is quite easy. Simply determine a path you'd like to install the sqlcl application in and supply that directory to the script.
+Running this script is quite easy. Simply determine a path you'd like to install the SQLcl application in and supply that directory to the script.
 
 ```bash
 git clone git@github.com:trangelier/sqlcl-install.git
 cd sqlcl-install
-./run.sh ~/development/oracle/
+./run.sh ~/oracle/
 ```
 
 Don't forget to set a shell alias in your `.bashrc` or `.zshrc` file such as this:
 
 ```bash
-alias sqlcl="/Users/tylerangelier/development/oracle/"
+alias sqlcl="~/oracle/"
 ```
 
 # My Setup
@@ -31,3 +31,5 @@ ${HOME}
         sqlcl
         wallets
 ```
+
+This script works great when setting up a new machine (or server!) or when I need to update my SQLcl version.
